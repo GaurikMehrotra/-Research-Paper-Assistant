@@ -1,0 +1,36 @@
+{
+  "corpus_sha256": "4b20b0908fd41ae695b79c1ffe2c5a5a644747987f3e3cd47556fd3bc6dfb3b2",
+  "corpus": {
+    "qa": "allenai/qasper validation",
+    "summaries": "ccdv/arxiv-summarization test",
+    "location_kind": "dataset paragraph ordinal, NOT PDF page"
+  },
+  "label_count": 30,
+  "seed": 42,
+  "hardware": {
+    "processor": "",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "device": "cpu",
+    "threads": 2,
+    "logical_cpus": 5,
+    "available_ram_mb": 34183.1796875
+  },
+  "retrieval": {
+    "recall@1": 0.14310344827586208,
+    "recall@3": 0.19433497536945815,
+    "recall@5": 0.3173234811165846,
+    "mrr": 0.3316091954022989,
+    "questions": 29,
+    "rank_depth": 5
+  },
+  "qa": {
+    "em": 0.06666666666666667,
+    "f1": 0.08757122507122507,
+    "questions": 30
+  },
+  "mean_retrieval_seconds": 2.7689826647333726,
+  "summarization": {
+    "status": "not run: corpus contains no summary labels"
+  },
+  "peak_rss_mb": 1015.84375
+}

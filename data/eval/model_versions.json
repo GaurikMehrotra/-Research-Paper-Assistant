@@ -1,0 +1,130 @@
+[
+  {
+    "repository": "BAAI/bge-small-en-v1.5",
+    "type": "model",
+    "revisions": [
+      "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a"
+    ],
+    "references": {
+      "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a": [
+        "main"
+      ]
+    }
+  },
+  {
+    "repository": "allenai/qasper",
+    "type": "dataset",
+    "revisions": [
+      "06806e4608976fc2fac0a090ac425d5b2b29caf4",
+      "fdc9d8214fbab5dd782958601db4d678e6934a54"
+    ],
+    "references": {
+      "fdc9d8214fbab5dd782958601db4d678e6934a54": [
+        "main"
+      ],
+      "06806e4608976fc2fac0a090ac425d5b2b29caf4": [
+        "refs/convert/parquet"
+      ]
+    }
+  },
+  {
+    "repository": "ccdv/arxiv-summarization",
+    "type": "dataset",
+    "revisions": [
+      "240aaf1a969b3f8cd0ade6986bfad0cd730ee288"
+    ],
+    "references": {
+      "240aaf1a969b3f8cd0ade6986bfad0cd730ee288": [
+        "main"
+      ]
+    }
+  },
+  {
+    "repository": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "type": "model",
+    "revisions": [
+      "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+    ],
+    "references": {
+      "233902d25c440f23af6f7d6e94d2946bac0bee0a": [
+        "main"
+      ]
+    }
+  },
+  {
+    "repository": "deepset/roberta-base-squad2",
+    "type": "model",
+    "revisions": [
+      "adc3b06f79f797d1c575d5479d6f5efe54a9e3b4"
+    ],
+    "references": {
+      "adc3b06f79f797d1c575d5479d6f5efe54a9e3b4": [
+        "main"
+      ]
+    }
+  },
+  {
+    "repository": "distilbert-base-uncased",
+    "type": "model",
+    "revisions": [
+      "12040accade4e8a0f71eabdb258fecc2e7e948be"
+    ],
+    "references": {
+      "12040accade4e8a0f71eabdb258fecc2e7e948be": [
+        "main"
+      ]
+    }
+  },
+  {
+    "repository": "google/flan-t5-base",
+    "type": "model",
+    "revisions": [
+      "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2"
+    ],
+    "references": {
+      "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2": [
+        "main"
+      ]
+    }
+  },
+  {
+    "repository": "google/flan-t5-small",
+    "type": "model",
+    "revisions": [
+      "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab"
+    ],
+    "references": {
+      "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab": [
+        "main"
+      ]
+    }
+  },
+  {
+    "repository": "sentence-transformers/all-MiniLM-L6-v2",
+    "type": "model",
+    "revisions": [
+      "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    ],
+    "references": {
+      "1110a243fdf4706b3f48f1d95db1a4f5529b4d41": [
+        "main"
+      ]
+    }
+  },
+  {
+    "repository": "sshleifer/distilbart-cnn-12-6",
+    "type": "model",
+    "revisions": [
+      "a4f8f3ea906ed274767e9906dbaede7531d660ff",
+      "e9f0c28b06171c3fc52cd02cc8481cb7350fd32e"
+    ],
+    "references": {
+      "e9f0c28b06171c3fc52cd02cc8481cb7350fd32e": [
+        "refs/pr/29"
+      ],
+      "a4f8f3ea906ed274767e9906dbaede7531d660ff": [
+        "main"
+      ]
+    }
+  }
+]
