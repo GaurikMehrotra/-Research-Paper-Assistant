@@ -9,9 +9,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("csv")
     parser.add_argument("--minimum", type=int, default=20)
+    parser.add_argument("--reviewer-kind", choices=["human", "assistant"], default="human")
     args = parser.parse_args()
     with open(args.csv, newline="") as file:
         rows = list(csv.DictReader(file))
+    if args.reviewer_kind == "human" and any(r.get("reviewer") == "assistant" for r in rows):
+        raise SystemExit("Assistant review cannot count as independent human manual review")
     completed = [
         r
         for r in rows
@@ -26,7 +29,8 @@ def main() -> None:
     if len(completed) < args.minimum:
         raise SystemExit(f"Incomplete review: {len(completed)}/{args.minimum} required judgements")
     print(
-        f"{len(completed)} completed manual judgements; inspect disagreements and error categories"
+        f"{len(completed)} completed {args.reviewer_kind} source judgements; "
+        "inspect disagreements and error categories"
     )
 
 

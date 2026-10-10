@@ -3,8 +3,8 @@
 Automatic baseline diagnostics: 18 of 30 answers abstained and seven had positive
 reference token F1. These counts are not manual faithfulness judgments. FLAN-T5-small
 produced an unrelated gamma-ray summary and repetitive “systyrofoam” text on the two
-arXiv samples. Reranking improved Recall@5 slightly but reduced QA F1. Manual source
-review is still required to assign error categories and validate generated claims.
+arXiv samples. Reranking improved Recall@5 slightly but reduced QA F1. Assistant source review of a separate 30-question PDF sample is now available in
+ASSISTANT_REVIEW.md. Independent human review remains recommended.
 
 1. Open the original PDF at the cited physical page. Compare extracted text and reading
    order with the page, including columns, captions, equations and references.

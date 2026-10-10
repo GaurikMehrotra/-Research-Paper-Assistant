@@ -9,9 +9,11 @@ QASPER source locations are paragraph ordinals, never PDF pages. Benchmark index
 isolated from uploaded PDF indexes. Samples are deterministic and source ordered;
 these small comparisons do not establish general accuracy or statistical significance.
 
-Pending user work: write 30 PDF-specific questions in `custom_questions.csv`, review at
-least 20 generated answers using the provided CSV, and measure latency/RSS on the i3.
-No manual faithfulness percentages or target-laptop RAM guarantees are claimed.
+Assistant-authored PDF labels and source reviews now cover all 30 responses; see
+`assistant_questions.csv`, `assistant_source_review.csv` and `results/assistant-authored`.
+EM/F1 is 0.467/0.547. This convenience sample and its reviews are not independent
+human evaluation. Human review and i3 measurements remain separate; templates are
+provided for independently authored labels. No target-laptop RAM guarantee is claimed.
 
 Cloud measurements use five logical CPUs, two Torch threads, approximately 33 GB RAM.
 RSS is sampled every 50 ms and can miss brief peaks. Query timing includes model loads;

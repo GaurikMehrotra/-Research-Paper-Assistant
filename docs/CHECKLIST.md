@@ -10,12 +10,14 @@
 - [x] Real pretrained-model ingest, cited QA, summarization and notes smoke validated.
 - [x] QASPER retrieval and QA benchmarks actually executed.
 - [x] arXiv summary metrics and FLAN-T5-base/DistilBART comparison executed.
-- [ ] 30 user-written labels filled and evaluated; 20 real answers reviewed.
+- [x] 30 assistant-authored PDF labels evaluated and 30 responses reviewed by assistant.
+- [ ] Independently authored human labels and human faithfulness review.
 - [x] Ablation report and cloud CPU latency/RAM measured and documented.
 - [ ] i3 laptop latency/RAM measured.
 - [x] Model revisions and corpus hashes recorded for published quality results.
 - [x] Real-model product demo recorded (an infrastructure demo is not model validation).
-- [ ] GitHub CI outcome observed after pushing (a workflow file is not a passed CI run).
+- [x] Initial GitHub CPU CI passed on Python 3.10/3.12 (run 38061279597, commit 85319e5).
+- [ ] Latest follow-up commit CI outcome observed.
 
 For the supplied existing repository, after local checks:
 

@@ -1,0 +1,35 @@
+{
+  "configuration_sha256": "d954f33f79eb7fd5d6a0db871977452dca6990b3c08ae2ccf38a5593c85464db",
+  "corpus_sha256": "d83212df439cf5c3f8f3a99e04a28f0fbadd129fa36aa53a785c8236a200684e",
+  "corpus": "assistant-authored questions with true PDF page/section locations",
+  "label_count": 30,
+  "seed": 42,
+  "hardware": {
+    "processor": "",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "device": "cpu",
+    "threads": 2,
+    "logical_cpus": 5,
+    "available_ram_mb": 34183.1796875
+  },
+  "retrieval": {
+    "recall@1": 0.5,
+    "recall@3": 0.75,
+    "recall@5": 0.7857142857142857,
+    "mrr": 0.6279761904761905,
+    "questions": 28,
+    "rank_depth": 5
+  },
+  "qa": {
+    "em": 0.4666666666666667,
+    "f1": 0.5466666666666666,
+    "questions": 30
+  },
+  "mean_retrieval_seconds": 0.7494336271001278,
+  "mean_qa_seconds": 1.4468455186661837,
+  "mean_query_seconds": 2.1962791457663116,
+  "summarization": {
+    "status": "not run: no summary samples selected"
+  },
+  "peak_rss_mb": 934.46484375
+}

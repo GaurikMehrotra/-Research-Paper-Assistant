@@ -7,8 +7,8 @@ and Gradio. Designed for an 8 GB CPU laptop, with optional GPU evaluation.
 
 **Status:** the application, real-model smoke workflow and CPU benchmarks have been
 executed. Quality is limited: baseline QASPER token F1 is 0.103. This is a portfolio
-study tool whose outputs require source verification. Manual reviews and i3 laptop
-measurements remain pending. See [measured results](data/eval/results/RESULTS.md).
+study tool whose outputs require source verification. Assistant source reviews are included; independent human review and i3 laptop
+measurements remain separate. See [measured results](data/eval/results/RESULTS.md).
 
 ![Recorded real model outputs, including an imperfect summary](docs/model-demo.gif)
 
@@ -177,7 +177,27 @@ coverage before interpreting comparisons. Dataset benchmarks use source paragrap
 positions explicitly labelled as such; **QASPER has no PDF page labels** and does not
 validate parsing. BERTScore/ROUGE measure reference similarity, not factual truth.
 
-Fill the 30 rows in `data/eval/custom_questions.csv` after inspecting the sample PDFs.
+An additional assistant-authored convenience set covers 30 questions from Attention
+and BERT, including two easy out-of-domain absence questions. Labels were written
+before predictions. Its EM/F1 is 0.467/0.547 and Recall@5 is 0.786 (28 answerable
+items). It is easier than QASPER and must not be compared as an accuracy improvement.
+See [labels](data/eval/assistant_questions.csv),
+[source review](data/eval/assistant_source_review.csv), and
+[review discussion](docs/ASSISTANT_REVIEW.md).
+
+The assistant inspected all 30 responses: 11 false abstentions and one wrong
+experimental context were found. All returned citation locations matched source
+text, which did not prevent the wrong answer. These are **assistant judgments**;
+no independent human faithfulness study is claimed. Reproduce the study with:
+
+```bash
+python -m scripts.prepare_sample_questions
+python -m scripts.custom_corpus --labels data/eval/assistant_questions.csv --label-author assistant --output data/eval/assistant_corpus.json
+python -m src.eval.run --config configs/evaluation_cpu.yaml --corpus data/eval/assistant_corpus.json --output data/eval/runs/assistant-authored
+python -m scripts.check_review data/eval/assistant_source_review.csv --reviewer-kind assistant --minimum 20
+```
+
+For your own independently authored set, fill the 30 rows in `data/eval/custom_questions.csv` after inspecting the sample PDFs.
 Use actual paper IDs, exact extracted evidence, section, and PDF page. Store reference
 answers as a JSON array of strings, or `unanswerable=true` for absence questions.
 
@@ -216,5 +236,5 @@ Kaggle cells for sequential batch evaluation are in [docs/KAGGLE.md](docs/KAGGLE
 - The source MIT license does not override upstream model/dataset/paper licenses.
 
 See [MODEL_CARD.md](MODEL_CARD.md), [error analysis](docs/ERROR_ANALYSIS.md), and the
-[final checklist](docs/CHECKLIST.md). The automated benchmarks and real-model demo are recorded; manual faithfulness review,
-user-written labels, target-laptop measurements and remote CI observation remain separate.
+[final checklist](docs/CHECKLIST.md). The automated benchmarks and real-model demo are recorded; assistant source review and initial GitHub CPU CI are recorded. Independent human review,
+user-written labels and target-laptop measurements remain separate.

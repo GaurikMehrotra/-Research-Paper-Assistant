@@ -13,12 +13,15 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", default="configs/fast_cpu.yaml")
     parser.add_argument("--labels", default="data/eval/custom_questions.csv")
+    parser.add_argument("--label-author", choices=["user", "assistant"], default="user")
     parser.add_argument("--output", default="data/eval/custom_corpus.json")
     args = parser.parse_args()
     assistant = ResearchAssistant(args.config)
     papers, questions = {}, []
     with Path(args.labels).open(newline="") as file:
         for row in csv.DictReader(file):
+            if row.get("label_author") and row["label_author"] != args.label_author:
+                raise ValueError("Label authorship does not match --label-author")
             if not row["question"].strip():
                 raise ValueError(f"Blank question {row['id']}; complete the label template first")
             record = assistant._paper(row["paper_id"])
@@ -56,7 +59,9 @@ def main() -> None:
                 }
             )
     corpus = {
-        "provenance": "User-labelled questions with true PDF page/section locations",
+        "provenance": (
+            f"{args.label_author}-authored questions with true PDF page/section locations"
+        ),
         "papers": list(papers.values()),
         "questions": questions,
         "summaries": [],

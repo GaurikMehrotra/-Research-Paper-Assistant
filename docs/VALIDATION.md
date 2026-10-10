@@ -11,7 +11,7 @@
   all three summarizer scores. See data/eval/results for metrics and experiment settings.
 - Gradio and FastAPI startup/local requests were validated; final service checks
   are recorded below. No public deployment or fresh-snapshot restoration is claimed.
-- Manual labels/reviews, i3 measurements, optional Kaggle and remote CI remain unrun.
+- Independent human review, i3 measurements and optional Kaggle remain unrun.
 
 Final checks: Gradio HTTP root/config/API schema returned 200 and its ask endpoint
 returned a highlighted Transformer answer. FastAPI cached upload, cited QA, summary,

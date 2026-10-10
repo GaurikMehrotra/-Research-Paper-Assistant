@@ -1,0 +1,362 @@
+[
+  {
+    "id": "assistant-01",
+    "question": "What network architecture does Attention Is All You Need propose?",
+    "prediction": "",
+    "references": [
+      "Transformer"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.8195795900028315,
+    "qa_seconds": 2.207018009001331
+  },
+  {
+    "id": "assistant-02",
+    "question": "What BLEU score does the abstract report for English-to-German translation?",
+    "prediction": "28.4",
+    "references": [
+      "28.4"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.7246199649962364,
+    "qa_seconds": 1.5591178480026429
+  },
+  {
+    "id": "assistant-03",
+    "question": "Which GPU model is named in the Introduction's twelve-hour training claim?",
+    "prediction": "",
+    "references": [
+      "P100"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.701717333002307,
+    "qa_seconds": 1.2359998199972324
+  },
+  {
+    "id": "assistant-04",
+    "question": "What other name does the Background give for self-attention?",
+    "prediction": "intra-attention",
+    "references": [
+      "intra-attention"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.7035317589979968,
+    "qa_seconds": 1.3461089560005348
+  },
+  {
+    "id": "assistant-05",
+    "question": "How many identical layers are in the Transformer encoder stack?",
+    "prediction": "N = 6",
+    "references": [
+      "6"
+    ],
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "retrieval_seconds": 0.7980835310008842,
+    "qa_seconds": 1.3749309559934773
+  },
+  {
+    "id": "assistant-06",
+    "question": "What normalization follows the encoder residual connections?",
+    "prediction": "",
+    "references": [
+      "layer normalization"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.6548446669985424,
+    "qa_seconds": 1.1125522739966982
+  },
+  {
+    "id": "assistant-07",
+    "question": "How many identical layers are in the Transformer decoder stack?",
+    "prediction": "",
+    "references": [
+      "6"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.7256008179974742,
+    "qa_seconds": 1.2092819679965032
+  },
+  {
+    "id": "assistant-08",
+    "question": "Which function converts scaled query-key dot products into weights?",
+    "prediction": "softmax",
+    "references": [
+      "softmax"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.6893590809995658,
+    "qa_seconds": 1.2796900749963243
+  },
+  {
+    "id": "assistant-09",
+    "question": "How many parallel attention heads are used in the described model?",
+    "prediction": "h = 8",
+    "references": [
+      "8"
+    ],
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "retrieval_seconds": 0.6920724139999948,
+    "qa_seconds": 1.4988477310034796
+  },
+  {
+    "id": "assistant-10",
+    "question": "Which activation separates the two feed-forward linear transformations?",
+    "prediction": "ReLU",
+    "references": [
+      "ReLU"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.7091930240057991,
+    "qa_seconds": 1.5792885519986157
+  },
+  {
+    "id": "assistant-11",
+    "question": "What is the inner-layer dimensionality of the feed-forward network?",
+    "prediction": "dff = 2048",
+    "references": [
+      "2048"
+    ],
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "retrieval_seconds": 0.7028893070018967,
+    "qa_seconds": 1.321425961003115
+  },
+  {
+    "id": "assistant-12",
+    "question": "Which functions define the fixed positional encodings?",
+    "prediction": "",
+    "references": [
+      "sine and cosine"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.6521797270033858,
+    "qa_seconds": 1.1237148430009256
+  },
+  {
+    "id": "assistant-13",
+    "question": "About how many sentence pairs are in the English-German training dataset?",
+    "prediction": "4.5 million",
+    "references": [
+      "4.5 million"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.696748001006199,
+    "qa_seconds": 1.4634052199980943
+  },
+  {
+    "id": "assistant-14",
+    "question": "How many sentences are in the English-French training dataset?",
+    "prediction": "36M",
+    "references": [
+      "36M"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.707684421002341,
+    "qa_seconds": 1.6284243729969603
+  },
+  {
+    "id": "assistant-15",
+    "question": "How many NVIDIA P100 GPUs were used to train the models?",
+    "prediction": "8",
+    "references": [
+      "8"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.8075506699969992,
+    "qa_seconds": 1.4596449289965676
+  },
+  {
+    "id": "assistant-16",
+    "question": "For how many steps were the base models trained?",
+    "prediction": "100,000",
+    "references": [
+      "100,000"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.8061892369951238,
+    "qa_seconds": 1.3871955790018546
+  },
+  {
+    "id": "assistant-17",
+    "question": "Which optimizer was used to train the Transformer?",
+    "prediction": "",
+    "references": [
+      "Adam"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 1.1728228259962634,
+    "qa_seconds": 1.6268064199975925
+  },
+  {
+    "id": "assistant-18",
+    "question": "How many learning-rate warmup steps were used?",
+    "prediction": "4000",
+    "references": [
+      "4000"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.7408108149975305,
+    "qa_seconds": 1.5244613210015814
+  },
+  {
+    "id": "assistant-19",
+    "question": "What beam size was used for machine translation inference?",
+    "prediction": "21 and \u03b1 = 0.3",
+    "references": [
+      "4"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.7176714460001676,
+    "qa_seconds": 1.1890601490013069
+  },
+  {
+    "id": "assistant-20",
+    "question": "What is the capital of Madagascar?",
+    "prediction": "",
+    "references": [
+      ""
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.7454826090033748,
+    "qa_seconds": 0.4177863860022626
+  },
+  {
+    "id": "assistant-21",
+    "question": "What does BERT stand for?",
+    "prediction": "",
+    "references": [
+      "Bidirectional Encoder Representations from Transformers"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.7277417450022767,
+    "qa_seconds": 1.2843520720052766
+  },
+  {
+    "id": "assistant-22",
+    "question": "How many additional output layers are needed to fine-tune BERT as described in the abstract?",
+    "prediction": "",
+    "references": [
+      "one"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.6899364700002479,
+    "qa_seconds": 1.278914848997374
+  },
+  {
+    "id": "assistant-23",
+    "question": "How many NLP tasks does the BERT abstract report new state-of-the-art results on?",
+    "prediction": "eleven",
+    "references": [
+      "eleven"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.648394787000143,
+    "qa_seconds": 1.8960061250036233
+  },
+  {
+    "id": "assistant-24",
+    "question": "What GLUE score is reported in the BERT abstract?",
+    "prediction": "",
+    "references": [
+      "80.5%"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.8508058449951932,
+    "qa_seconds": 1.794688245994621
+  },
+  {
+    "id": "assistant-25",
+    "question": "What MultiNLI accuracy is reported in the BERT abstract?",
+    "prediction": "",
+    "references": [
+      "86.7%"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.7284781150010531,
+    "qa_seconds": 1.9306211120056105
+  },
+  {
+    "id": "assistant-26",
+    "question": "What pre-training task is used in addition to the masked language model?",
+    "prediction": "",
+    "references": [
+      "next sentence prediction"
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_seconds": 0.7597680120015866,
+    "qa_seconds": 1.8590158119986882
+  },
+  {
+    "id": "assistant-27",
+    "question": "What type of Transformer is BERT's model architecture?",
+    "prediction": "bidirectional",
+    "references": [
+      "multi-layer bidirectional Transformer encoder"
+    ],
+    "em": 0.0,
+    "f1": 0.4,
+    "retrieval_seconds": 0.7298238720031804,
+    "qa_seconds": 1.9825439129999722
+  },
+  {
+    "id": "assistant-28",
+    "question": "How many total parameters does BERTBASE have?",
+    "prediction": "110M",
+    "references": [
+      "110M"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.7882576849951874,
+    "qa_seconds": 1.5318752769962884
+  },
+  {
+    "id": "assistant-29",
+    "question": "How many total parameters does BERTLARGE have?",
+    "prediction": "340M",
+    "references": [
+      "340M"
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.7859748519986169,
+    "qa_seconds": 1.7700084349999088
+  },
+  {
+    "id": "assistant-30",
+    "question": "What is the capital of Madagascar?",
+    "prediction": "",
+    "references": [
+      ""
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "retrieval_seconds": 0.8051961890014354,
+    "qa_seconds": 0.532578348997049
+  }
+]
