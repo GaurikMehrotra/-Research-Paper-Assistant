@@ -24,10 +24,10 @@ parsing:
   min_chars: 100
   repeated_page_fraction: 0.6
 paths:
-  evaluation: data/eval/runs
-  indexes: data/indexes
-  papers: data/papers
-  processed: data/processed
+  evaluation: ../runs
+  indexes: ../../indexes
+  papers: ../../papers
+  processed: ../../processed
 qa:
   min_evidence_similarity: 0.3
   min_span_score: 0.25

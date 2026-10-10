@@ -139,7 +139,7 @@ questions are poor fits for this extractive model and remain in QASPER evaluatio
 ```bash
 python -m scripts.prepare_eval --questions 30 --summaries 2 --output data/eval/corpus.json
 python -m src.eval.run --config configs/evaluation_cpu.yaml --corpus data/eval/corpus.json --output data/eval/runs/baseline
-python -m scripts.ablations --config configs/fast_cpu.yaml --corpus data/eval/corpus.json --compare-summaries
+python -m scripts.ablations --config configs/evaluation_cpu.yaml --corpus data/eval/corpus.json --compare-summaries
 python -m scripts.report data/eval/runs/ablations
 python -m scripts.model_manifest --output data/eval/model_versions.json
 ```
